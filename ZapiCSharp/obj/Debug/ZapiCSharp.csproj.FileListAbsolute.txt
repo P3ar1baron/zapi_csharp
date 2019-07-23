@@ -6,3 +6,12 @@ C:\Users\Masud\Desktop\ZapiCSharp\ZapiCSharp\obj\Debug\ZapiCSharp.exe
 C:\Users\Masud\Desktop\ZapiCSharp\ZapiCSharp\obj\Debug\ZapiCSharp.pdb
 C:\Users\Masud\Desktop\ZapiCSharp\ZapiCSharp\bin\Debug\JWT.dll
 C:\Users\Masud\Desktop\ZapiCSharp\ZapiCSharp\bin\Debug\JWT.pdb
+C:\Users\Vlad\Documents\zapi_csharp\ZapiCSharp\bin\Debug\ZapiCSharp.exe.config
+C:\Users\Vlad\Documents\zapi_csharp\ZapiCSharp\bin\Debug\ZapiCSharp.exe
+C:\Users\Vlad\Documents\zapi_csharp\ZapiCSharp\bin\Debug\ZapiCSharp.pdb
+C:\Users\Vlad\Documents\zapi_csharp\ZapiCSharp\bin\Debug\JWT.pdb
+C:\Users\Vlad\Documents\zapi_csharp\ZapiCSharp\obj\Debug\ZapiCSharp.csprojAssemblyReference.cache
+C:\Users\Vlad\Documents\zapi_csharp\ZapiCSharp\obj\Debug\ZapiCSharp.csproj.CoreCompileInputs.cache
+C:\Users\Vlad\Documents\zapi_csharp\ZapiCSharp\obj\Debug\ZapiCSharp.csproj.CopyComplete
+C:\Users\Vlad\Documents\zapi_csharp\ZapiCSharp\obj\Debug\ZapiCSharp.exe
+C:\Users\Vlad\Documents\zapi_csharp\ZapiCSharp\obj\Debug\ZapiCSharp.pdb

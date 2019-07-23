@@ -34,16 +34,16 @@ namespace ZapiCSharp
         {
 
             //define ACCOUNT_ID
-            var ACCOUNT_ID = "123456:1234abcd-1234-abcd-1234-1234abcd1234";
+            var ACCOUNT_ID = "5c40354f36647b5b91029d4c";
 
             //define AccessKey
-            var ACCESS_KEY = "MTZhOGQ5OTEtOTI0OS0zNzdmLWIyZTAtYTFkOTFhZTI2OTczIDEyMzQ1NjoxMjM0YWJjZC0xMjM0LWFiY2QtMTIzNC0xMjM0YWJjZDEyMzQgVVNFUl9ERUZBVUxUX05BTUU=";
+            var ACCESS_KEY = "NzUzNGQyMmQtYmFmMi0zYjAwLThhYTMtM2JmNTE5YzVlOWFiIDVjNDAzNTRmMzY2NDdiNWI5MTAyOWQ0YyBVU0VSX0RFRkFVTFRfTkFNRQ";
 
             //define SecretKey
-            var SECRET_KEY = "4b6v9i0kP7EjVzcuLMc4CUdkyq9AeTWheO2pr5CotGc";
+            var SECRET_KEY = "6OkK3e-2e3wGoZeGpS8xX0s9GD-rnNP66VI1lDNcLv4";
 
             //define Base Url
-            var BASE_URL = "https://e2f89b98.ngrok.io";
+            var BASE_URL = "https://prod-api.zephyr4jiracloud.com";
 
             //define ContextPath
             var CONTEXT_PATH = "/connect";
@@ -76,28 +76,30 @@ namespace ZapiCSharp
                 };
 
             string token = JWT.JsonWebToken.Encode(payload, SECRET_KEY, JWT.JwtHashAlgorithm.HS256);
-            client.DefaultRequestHeaders.Add("Authorization", "JWT " + token);
-            client.DefaultRequestHeaders.Add("zapiAccessKey", ACCESS_KEY);
-            client.DefaultRequestHeaders.Add("User-Agent", "ZAPI");
+            Console.WriteLine(token);
 
-            try
-            {
-                HttpResponseMessage response = await client.GetAsync(CONTEXT_PATH + RELATIVE_PATH + "?" + QUERY_STRING);
-                response.EnsureSuccessStatusCode();
+            //client.DefaultRequestHeaders.Add("Authorization", "JWT " + token);
+            //client.DefaultRequestHeaders.Add("zapiAccessKey", ACCESS_KEY);
+            //client.DefaultRequestHeaders.Add("User-Agent", "ZAPI");
 
-                //write response in console
-                Console.WriteLine(response);
+            //try
+            //{
+            //    HttpResponseMessage response = await client.GetAsync(CONTEXT_PATH + RELATIVE_PATH + "?" + QUERY_STRING);
+            //    response.EnsureSuccessStatusCode();
 
-                // Deserialize the updated product from the response body.
-                string result = await response.Content.ReadAsStringAsync();
+            //    write response in console
+            //    Console.WriteLine(response);
 
-                //write Response in console
-                Console.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
+            //    Deserialize the updated product from the response body.
+            //    string result = await response.Content.ReadAsStringAsync();
+
+            //    write Response in console
+            //    Console.WriteLine(result);
+            //}
+            //catch (Exception e)
+            //{
+            //    Console.WriteLine(e.Message);
+            //}
         }
 
         /// <summary>
